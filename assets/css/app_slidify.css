@@ -1,0 +1,129 @@
+
+
+.logo {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 10
+}
+
+p {
+	font-size: 25px !important;
+	color: #222 !important;
+	
+}
+
+ul {
+	font-size: 35px !important;
+	color: #222 !important;
+}
+
+h1{
+  color: #e8000d;
+  font-family: "Helvetica";
+}
+
+h2 {
+  color: #0051BA !important;
+  font-family: "Helvetica";
+}
+
+table {
+	font-size: 35px !important;
+	color: #000000;
+}
+
+blockquote {
+	background-color: #f2f2f2 !important;
+}
+
+strong {
+	color: #0051BA !important;
+}
+
+blue {
+	color: #0051BA;
+	font-weight: bold;
+}
+
+.rmdtable {
+	color: #222 !important;
+}
+
+.big {
+	font-size: 40px !important;
+}
+
+.small {
+	font-size: 20px !important;
+}
+
+.title-slide {
+  background-color: white;
+  letter-spacing: 0px;
+
+}
+
+.title-slide hgroup h1 {
+  font-size: 60px;
+  line-height: 1.4;
+  letter-spacing: -3px;
+  color: #515151 !important;
+  font-family: "Helvetica";
+}
+
+.bigtext{
+  font-size: 60px;
+}
+
+iframe {
+height: 80vh;
+}
+.title-slide hgroup > h1, 
+.title-slide hgroup > h2 {
+  color: #333 ;  /* ; #EF5150*/
+  font-family: "Helvetica";
+}
+
+.title-slide hgroup p {
+  font-family: "Helvetica";
+}
+
+body {
+  background: #303030;
+}
+
+.segue h1 {
+  font-weight: 600;
+  font-size: 45px !important;
+  line-height: 200%; !important;
+  letter-spacing: -2px !important;
+  color:  #0051BA !important;
+  font-family: "Helvetica";
+}
+
+.segue h2{
+  line-height: 120%; !important;
+}
+
+
+slide:not(.segue) h2{
+  font-family: 'Helvetica', Arial, sans-serif;
+  letter-spacing: -2px;
+  color:#e8000d;
+}
+
+
+slides > slide:not(.nobackground):after {
+  content: 'Linn Memorial Lecture; September 29, 2017: Slide ' attr(data-slide-num);
+  font-family: "Helvetica";
+}
+
+article p, article li, article li.build, section p, section li{
+  font-family: 'Helvetica';
+  text-align: left;
+  font-size: 25px;
+  line-height: 1em;
+  letter-spacing: 0px;
+  color: #000000  ;
+}

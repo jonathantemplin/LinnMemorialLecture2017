@@ -1,0 +1,36 @@
+update_all = TRUE
+
+
+if (update_all) update.packages(ask=FALSE)
+
+installPackagesCRAN = function(needed_packages){
+  for (i in 1:length(needed_packages)){
+    haspackage = require(needed_packages[i], character.only = TRUE)
+    if (haspackage==FALSE){
+      install.packages(needed_packages[i])
+      require(needed_packages[i], character.only = TRUE)
+    }
+  }
+}
+
+installPackagesGithub = function(neededPackages, packagePath){
+  #forces update as packages may change frequently
+  for (i in 1:length(neededPackages)){
+    install_github(packagePath[i])
+    require(neededPackages[i], character.only = TRUE)
+    }
+}
+
+neededPackagesCRAN = c("servr", "devtools")
+installPackagesCRAN(needed_packages = neededPackagesCRAN)
+
+neededPackagesGithub = c("slidify", "slidifyLibraries")
+packagePathGithub = c("ramnathv/slidify", "ramnathv/slidifyLibraries")
+installPackagesGithub(neededPackages = neededPackagesGithub, packagePath = packagePathGithub)
+
+#Only use if creating talk for first time...
+#TalkName = "CCSSOtalk"
+#author(TalkName) 
+
+slidify("index.Rmd")
+servr::httw()
