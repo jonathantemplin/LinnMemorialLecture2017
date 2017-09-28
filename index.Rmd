@@ -7,7 +7,7 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 theme       : tomorrow      # 
 widgets     : [mathjax] #, bootstrap, quiz, shiny, interactive]            # {mathjax, quiz, bootstrap}
-mode        : draft # {standalone, draft, selfcontained}
+mode        : selfcontained # {standalone, draft, selfcontained}
 knit        : slidify::knit-2slides
 logo        : KUlogo1C.png
 biglogo     : KUSighorz4C.png
@@ -246,11 +246,11 @@ What the score represents is dependent upon the items of the test
 
 ---
 
-## In Psychometrics, We Often Create Our Reality
+## We Often Create Our Reality
 
 > - Building assessments involves trial and error
 > - Sometimes, test items do not fit the psychometric model used for assessment
-> - Often, these items are omitted from a test
+> - Often, the poorly fitting items are omitted from a test
 >   - The test then takes the form of the items that are left
 > - Many times this is forgotten as traits become living things
 
@@ -261,6 +261,8 @@ What the score represents is dependent upon the items of the test
 Scores from the same person are often correlated
 > - Sometimes, that correlation is so high that the scores are indistinguishable
 > - In such cases, correlated scores really are not distinct
+> - Traits must have a basis in reality
+>   - To narrow of definition is just as problematic as to wide
 
 <img src = 'assets/img/highcor.jpg' class="center" width = 50%>
 
@@ -362,28 +364,6 @@ As constructs and standards become more detailed, it becomes harder to create it
 
 > - Recall Linn (2000, p. 15): "Don't put all of the weight on a single test. Instead, seek multiple indicators. The choice of construct matters and the use of multiple indicators increases the validity of inferences based upon observed gains in achievement." 
 
----
-
-## For Example
-
-Consider the following item from a PARCC practice test:
-<!-- <img src="assets/img/parcc_practice2017.png"> -->
- <div style="text-align: center; width: 100%; border: 0px solid black;">
- <img src="assets/img/parcc_practice2017.png" width=80% style="vertical-align:">
- </div>
- 
-<div style="font-size: small;">
-  Image source: <a href="https://parcc.pearson.com/practice-tests/math/"> 
-  https://parcc.pearson.com/practice-tests/math/
-  </a> (Algebra I Practice Test)
-</div>
-
----
-
-## Possible Multidimensional Model
-
-<img src="assets/img/path_elamath.png" width=100% style="vertical-align:">
-
 --- 
 
 ## Section Summary
@@ -418,6 +398,7 @@ Consider the following item from a PARCC practice test:
 >- Constructs/standards are inherently multidimensional
 >- Key questions:
 >   - What dimension(s) do you want to measure?
+>   - Are the dimension(s) separable?
 >   - What gets in the way of measuring those dimension(s)?
 
 ---
@@ -481,6 +462,12 @@ $$P\left(Y_{pi} = 1 \middle| \theta_p, \gamma_p \right) = \frac{\exp\left(\theta
   https://parcc.pearson.com/practice-tests/math/
   </a> (Algebra I Practice Test)
 </div>
+
+---
+
+## Possible Multidimensional Model
+
+<img src="assets/img/path_elamath.png" width=100% style="vertical-align:">
 
 ---
 
@@ -596,9 +583,9 @@ Harvesting subscale scores from unidimensional tests is problematic:
 >- A uni- and multidimensional model both cannot be correct
 >- If the unidimensional model was appropriate for the test:
 >  - Subscale scores should see correlations approach 1.0 as the number of items increases
->- If the multidimensional model was appropriate for the test, then the unidimensional overall (total) score is not valid
+>- If the multidimensional model was appropriate for the test, then the unidimensional overall (total) score would not be valid
 >  - Either needs some type of arbitrary method for combining multiple scores (think Body Mass Index: total of height and weight of a person)
->  - Or, if calibrated with a unidimensional model, the score is likely is not as reliable as is being reported
+>  - Or, if calibrated with a unidimensional model, the score is likely not as reliable as is being reported
 >- Subscale scores likely represent error 
 >  - Yet they are what are asked for the most by educators
 >  - Grain size is information!
@@ -712,111 +699,6 @@ From: Templin and Bradshaw (2013; Journal of Classification)
 
 --- 
 
-
-## IRT Model: Continuous Scores
-
-# Item Characteristic Curve for an Item Measuring One Score
-<p>
-```{r, echo=FALSE, fig.align='center'}
-theta = seq(-4,4,.01)
-a = 1.5
-b = -1
-prob = exp(a*(theta-b))/(1+exp(a*(theta-b)))
-par(cex.axis=1.25, cex.lab=1.5)
-plot(x = theta, y = prob, type="l", xlab = "Score", ylab="Probability of Correct Response", col=2, lwd=5)
-
-```
-
---- 
-
-__Technical details__:
-<div style="color: black;">
-<details>
-<summary>IRT Model Parameterization</summary>
-
-For a person $p$ and an item $i$, the two-parameter logistic IRT model specifies:
-
-$$P(X_{pi}=1 \middle| \theta_p) = \frac{\exp\left({a_i\left(\theta_p - b_i\right)}\right)}{1+\exp\left({a_i\left(\theta_p - b_i\right)}\right)} = \frac{\exp\left(\lambda_{i0} + \lambda_{i1} \theta_p \right)}{1+\exp\left(\lambda_{i0} + \lambda_{i1} \theta_p \right)}$$
-
-Where:
-<ul>
-<li> $\theta_p \sim N(0,1)$ is the person-specific latent variable (ability) </li>
-<li> $a_i$ is the item-specific discrimination parameter </li>
-<li> $b_i$ is the item-specific difficulty parameter </li>
-<li> $\lambda_{i0} = -a_ib_i$ is the item-specific intercept </li>
-<li> $\lambda_{i1} = a_i$ is the item-specific slope </li>
-</ul>
-</details>
-</div>
-
---- 
-
-## DCM: Categorical Scores 
-
-# Item Characteristic Bar Chart for an Item Measuring One Score
-<p>
-```{r, echo=FALSE, fig.align='center'}
-prob = c(.15, .90)
-par(cex.axis=1.25, cex.lab=1.5)
-barplot(prob, ylim=c(0,1), xlab="Status", col=2, ylab="Probability of Correct Response", names.arg=c("Non Master", "Master"))
-```
-
---- 
-
-## DCM: Categorical Score 
-
-# Item Characteristic Bar Chart (Two Scores)
-<p>
-```{r, echo=FALSE, fig.align='center'}
-prob = c(.15, .3, .4, .95)
-par(cex.axis=1.25, cex.lab=1.5)
-barplot(prob, ylim=c(0,1), xlab="Status", col=2, ylab="Probability of Correct Response", names.arg=c("NM; NM", "NM; M", "M, NM", "M; M")) 
-```
-
-
----
-
-__Technical details__:
-<div style="color: black;">
-<details>
-<summary> DCM Model Parameterization (One Score) </summary>
-
-For a person $p$ and an item $i$, the model specifies:
-
-$$P(X_{pi}=1 | \alpha_p) = \frac{\exp\left(\lambda_{i,0} + \lambda_{i,1,(1)} \alpha_p \right)}{1+\exp\left(\lambda_{i,0} + \lambda_{i,1,(1)} \alpha_p \right)}$$
-
-Where:
-<ul>
-<li> $\alpha_p \sim B(p_{\alpha})$ is the person-specific latent variable (mastery status; 0=non master 1=master) </li>
-<li> $\lambda_{i,0}$ is the item-specific intercept </li>
-<li> $\lambda_{i,1,(1)}$ is the item-specific main effect </li>
-</ul>
-</details>
-</div>
-
-<p>
-
-<div style="color: black;">
-<details>
-<summary> DCM Model Parameterization (Two Scores) </summary>
-
-For a person $p$ and an item $i$, the model specifies:
-
-$$P(X_{pi}=1 | \alpha_p) = \frac{\exp\left(\lambda_{i,0} + \lambda_{i,1,(1)} \alpha_{p1} + \lambda_{i,1,(2)} \alpha_{p2}+ \lambda_{i,2,(1,2)} \alpha_{p1}\alpha_{p2}\right)}{1+\exp\left(\lambda_{i,0} + \lambda_{i,1,(1)} \alpha_{p1} + \lambda_{i,1,(2)} \alpha_{p2}+ \lambda_{i,2,(1,2)} \alpha_{p1}\alpha_{p2}\right)}$$
-
-Where:
-<ul>
-<li> $\alpha_p \sim B(p_{\alpha})$ is the person-specific latent variable (mastery status; 0=non master 1=master) 
-<li> $\lambda_{i,0}$ is the item-specific intercept </li>
-<li> $\lambda_{i,1,(1)}$ is the item-specific main effect for $\alpha_{p1}$ </li>
-<li> $\lambda_{i,1,(2)}$ is the item-specific main effect for $\alpha_{p2}$ </li>
-<li> $\lambda_{i,2,(1,2)}$ is the item-specific interaction for $\alpha_{p1}$ and for $\alpha_{p2}$ </li>
-</ul>
-</details>
-</div>
-
---- 
-
 ## Example of DCM Score Report
 
 <img class="center" src="assets/img/math12.png" width=70%>
@@ -828,7 +710,7 @@ Where:
 ## DCMs in DLM
 
 DCMs are used in the Dynamic Learning Maps Alternate Assessment System: http://dynamiclearningmaps.org/
->   - Assessment consortium for alternate population
+>   - Assessment consortium for students with significant cognitive disabilities
 >   - Based on concept of learning maps
 >   - Does not report at the skill level (collections of skills, but only for some states)
 
@@ -846,7 +728,7 @@ The map indicates the skills that must be mastered prior to learning any new ski
 
 ## Example Portion of the DLM Learning Map
 
-<img class="center" src="dlm.png" width=65%>
+<img class="center" src="assets/img/dlm.png" width=65%>
 
 From: http://dynamiclearningmaps.org
 
