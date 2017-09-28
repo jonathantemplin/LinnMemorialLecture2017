@@ -1,5 +1,5 @@
 ---
-title       : From Research to the Classroom (and Back) - Bettering Assessment Practice and Policy
+title       : From Research to the Classroom (and Back)':' Bettering Assessment Practice and Policy
 subtitle    : Robert L. Linn Memorial Lecture
 author      : Jonathan Templin, Ph.D.
 job         : Professor, Department of Educational Psychology, University of Kansas
@@ -28,7 +28,7 @@ body {background:grey transparent;}
   - What dimensions have to do with education
 - The nature of scores
 - The difficulty of assessing multiple dimensions 
-- Dreaming of changing the assessment system to help instruction and accountability 
+- Can large scale assessment be designed to help instruction and accountability?
 - But first...
 
 --- &twocol
@@ -72,10 +72,10 @@ and the use of multiple indicators increases the validity of inferences based up
 
 ## My Philosophy
 
-> - I'm a psychometrician who thinks our current system of assessment for accountabilty is bad for education
+> - I'm a psychometrician who thinks our current system of assessment for accountabilty is <b>bad</b> for education
 > - We test students far too much relative to what we get out of each test
 >   - From Smarter Balanced: https://portal.smarterbalanced.org/library/en/estimated-testing-times.pdf
-> - Current system of testing for accountability seems unnecessary in light of recent policy and psychometric advances
+> - Current system of testing for accountability is unnecessary in light of recent policy and psychometric advances
 > - For a test to be more useful, it must:
 >   - Not consume large amounts of time for instruction (including test preparation!)
 >   - Tell stakeholders more about the student
@@ -91,7 +91,7 @@ and the use of multiple indicators increases the validity of inferences based up
 >- Assessment/test: A collection of tasks used to quantify scores
 >- Item: A generic term for an assessment task
 >- Person/student/examinee/respondent: The person taking the assessment
->- Psychometric Models/Methods: The mathematical linkage between the a student's performance and their score(s)
+>- Psychometric Models/Methods: The mathematical linkage between the student performance and their score(s)
 
 --- .segue
 
@@ -113,7 +113,7 @@ and the use of multiple indicators increases the validity of inferences based up
 
 ## Dimensionality in Educational Testing
 
-- The dimensions of interest in educational testing are the scores of a test
+- The dimensions of interest in educational testing are represented by the scores of a test
 
 <img src="assets/img/CST-Report-levels031015.jpg" class="center" width ="65%">
 
@@ -134,6 +134,7 @@ and the use of multiple indicators increases the validity of inferences based up
 > - But, test scores and precise physical measurements are seldom the same...
 >   - Scores have error (sometimes a lot of error) -- indexed by reliablity or standard error of measurement
 >   - The meaning of the score may not be accurate
+>   - Scores have no true zero point
 
 ---
 
@@ -141,8 +142,7 @@ and the use of multiple indicators increases the validity of inferences based up
 
 > - To measure the height of an object, a ruler or tape measure can be used
 >  - Small amounts of error are often present either in the ruler (systematic) or in the observer (random)
-  
-<img src="assets/img/ruler.jpg" class="center" width ="65%">
+>  <img src="assets/img/ruler.jpg" class="center" width ="65%">
 
 ---
 
@@ -150,8 +150,8 @@ and the use of multiple indicators increases the validity of inferences based up
 
 > - If we could make an analogy of height and test scores, then the ruler would be different
 > - Rather than using one very precise and consistent ruler, we would have to use a set of smaller and more inconsistent measures
->  - Think of a set of smaller rulers, each approximately one inch in length...but some that are larger than an inch and some that are smaller than an inch
->  - These small rulers are like the items of a test -- each contributes some information to the score, but also each has error
+>  - Think of a set of smaller rulers, each approximately one inch in length...but some are larger than an inch and some are smaller than an inch
+>  - These small rulers are like the items of a test &mdash; each contributes some information to the score, but also each has error
 > - The overall length measure might then have a lot of error...
 > - Often, the amount of error in a score depends on the location of the score itself (harder to measure those at the ceiling/floor)
 
@@ -160,7 +160,7 @@ and the use of multiple indicators increases the validity of inferences based up
 
 ## Test Scores with Error
 
-Sometimes there is a little of error in scores...
+Sometimes there is a little error in scores...
 
 <img src="assets/img/scorenarrow.png" class="center" width ="100%">
 
@@ -258,9 +258,11 @@ What the score represents is dependent upon the items of the test
 
 ## Reality Bites Back
 
-> - Scores from the same person are often correlated
+Scores from the same person are often correlated
 > - Sometimes, that correlation is so high that the scores are indistinguishable
 > - In such cases, correlated scores really are not distinct
+
+<img src = 'assets/img/highcor.jpg' class="center" width = 50%>
 
 ---
 
@@ -352,11 +354,11 @@ As constructs and standards become more detailed, it becomes harder to create it
 
 ## Dimensionality in Education
 
-> - Dimensionality is number of dimensions assessed by a test
+> - Dimensionality is number of traits assessed by a test
 > - The utility of the outcome is key to the usefulness of a test
-> - For learning and growth, unidimensional tests are generally at too abstract of level to present actionable evidence to help students
+> - For learning and growth, unidimensional tests are generally at too abstract of a level to present actionable evidence to help students
 > - For too long we have tailored our tests to fit existing psychometric models, or mainly, software choices
-> - The field has advanced to a state where this is no longer something that has to be done
+> - The field has advanced to a state where this is no longer necessary
 
 > - Recall Linn (2000, p. 15): "Don't put all of the weight on a single test. Instead, seek multiple indicators. The choice of construct matters and the use of multiple indicators increases the validity of inferences based upon observed gains in achievement." 
 
@@ -414,8 +416,9 @@ Consider the following item from a PARCC practice test:
 >- Additional information needed about student abilities 
 >- Nature of some items necessitates multiple dimensions
 >- Constructs/standards are inherently multidimensional
-
-
+>- Key questions:
+>   - What dimension(s) do you want to measure?
+>   - What gets in the way of measuring those dimension(s)?
 
 ---
 
@@ -589,8 +592,7 @@ Harvesting subscale scores from unidimensional tests is problematic:
 
 ## Section Summary
 
->- None of the commonly-used current large-scale assessment practices allow multiple traits to be measured by an item
->- In each method mentioned, each item only measures one trait
+>- None of the commonly-used current large-scale assessment practices allows multiple traits to be measured by an item
 >- Items built for Next Generation Science Standards assessment inherently will measure more than one trait
 >  - One core concept
 >  - One or more cross-cutting ideas
@@ -609,13 +611,14 @@ Harvesting subscale scores from unidimensional tests is problematic:
 >- Multidimensional IRT Models (MIRT)
 >- Diagnostic Classification Models (DCMs)
 >- Knowledge Space Theory 
->- Of note: both are part of a larger family called Bayesian Inference Networks (BayesNets)
+>- Of note: each is part of a larger family of models called Bayesian Inference Networks (BayesNets)
+>   - Graphical models &mdash; similar versions used in machine learning and computer science
 
 ---
 
 ## The Curse of Dimensionality
 
->- Although a multidimensional model item sounds straight forward, there is a catch...
+>- Although a multidimensional model sounds straightforward to apply, there is a catch...
 >- In general, as more dimensions are measured by a test, more items are needed to reach a reliable level of measurement for each dimension
 >- More items means more time for testing
 > - <div style="text-align: center; width: 100%; border: 0px solid black;">
@@ -640,7 +643,7 @@ Harvesting subscale scores from unidimensional tests is problematic:
 ## Diagnostic Classification Models
 
 DCMs represent student abilities with ordinal categories instead of scores
->- Why: In short it takes fewer items to classify a person with high reliability than it does to provide a continuous score with a high reliabilty
+>- Why: In short it takes fewer items to classify a person with high reliability than it does to provide a continuous score with a reasonable reliabilty
 >- How: Grouping students into homogeneous categories (masters vs. non-masters)
 >  - Students within a category are considered to have the same amount of ability
 >  - The masters category contains students that have more ability than the non-masters category
@@ -799,7 +802,7 @@ DCMs are used in the Dynamic Learning Maps Alternate Assessment System: http://d
 ## Learning Maps
 
 A learning map is:
-- A collection of skills to be mastered along with 
+- A collection of skills to be mastered, along with
 - The connections between skills 
 
 The map indicates the skills that must be mastered prior to learning any new skill
@@ -814,8 +817,11 @@ From: http://dynamiclearningmaps.org
 
 ---
 
-## DLM Implementation: The Missing Learning Map
+## DLM Implementation
 
+# The Missing Learning Map
+
+<br>
 Although the learning map idea behind DLM is very important, issues have remained in its implementation:
 
 > - The map itself is not directly used in the scoring process
@@ -856,7 +862,7 @@ The ESSA was signed into law by President Barack Obama on December 10, 2015.
 
 Notable portions of the law with respect to accountability:
 > - States have flexibility in format of assessment
->   - Can include multiple interim assessments through the course of the academic year
+>   - Can include multiple interim assessments throughout the academic year
 > - Ability to pilot innovative approaches to statewide assessments (up to seven states)
 >   - Multiple assessments (e.g., curriculum-embedded, interim, or through-course tests) given throughout the year
 >   - May be based on a subset of grades/subjects
@@ -914,12 +920,6 @@ What an Innovative Assessment Could Look Like:
 
 ---
 
-## Tests Standardized Across State
-
-Tests administered across state using common item bank for each latent variable
-
----
-
 ## Instant Results Needed
 
 Because each test is tied to curriculum, results must be instant:
@@ -931,7 +931,7 @@ Because each test is tied to curriculum, results must be instant:
 ## Results Used for Summative Accountability
 
 Goal for students: Master as many concepts as possible
-- Profile based standards can be accomplished
+- Profile-based standards can be accomplished
 - Standard setting takes a different form
 - Students mastering more complex material can show evidence for simpler material
 
@@ -941,7 +941,7 @@ Goal for students: Master as many concepts as possible
 
 Growth is simple concept: 
 - What do you know now that you did not know before?
-- Understandable metrics that do not yield notable non-sense results
+- Understandable metrics that do not yield notable nonsense results
 
 ---
 
@@ -960,7 +960,7 @@ Tests can be integrated into instruction and the curriculum
 ## Concluding Remarks
 
 > - The lag time from research to practice can be long, and for good reason
-> - But, testing is so obitquous (and expensive), that providing more information is necessary to continue
+> - But, testing is so ubitquous (and expensive), that providing more information is necessary to continue
 > - The interplay between research, practice, and policy is critical
 >   - Research: Development and evaluation of methods and models
 >   - Practice: Assessment literacy and use by those who impact education
