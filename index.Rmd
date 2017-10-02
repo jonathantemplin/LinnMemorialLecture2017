@@ -34,7 +34,7 @@ body {background:grey transparent;}
 --- &twocol
 
 
-## Honoring Dr. Robert L (Bob) Linn
+## Honoring Dr. Robert L. (Bob) Linn
 
 *** {name: left}
 - A lifetime of contributions to education 
@@ -592,7 +592,7 @@ Harvesting subscale scores from unidimensional tests is problematic:
 
 --- &nologo
 
-<iframe src = "http://jonathantemplin.com:3838/ccsso2017/subscoreCor/" style="width:100%; height=900px"></iframe>
+<iframe src = "https://jtemplin.shinyapps.io/subscorecor/" style="width:100%; height=900px"></iframe>
 
 ---
 
@@ -641,7 +641,7 @@ Harvesting subscale scores from unidimensional tests is problematic:
 
 # More Dimensions $\longrightarrow$ More Items
 
-<iframe src="http://jonathantemplin.com:3838/ccsso2017/subscoreRel/" style="width:100%; height=900px"></iframe>
+<iframe src="https://jtemplin.shinyapps.io/subscorerel/" style="width:100%; height=900px"></iframe>
 
 
 ---
@@ -684,7 +684,7 @@ From: Templin and Bradshaw (2013; Journal of Classification)
 
 # DCM Reliability
 
-<iframe src="http://jonathantemplin.com:3838/ccsso2017/dcmRel/" style="width:100%; height=900px"></iframe>
+<iframe src="https://jtemplin.shinyapps.io/dcmrel/" style="width:100%; height=900px"></iframe>
 
 ---
 
